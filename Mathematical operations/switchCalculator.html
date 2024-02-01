@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        var num1 = parseInt(prompt("Enter the Number"));
+        var num2 = parseInt(prompt("Enter the Number"));
+        var opt = parseInt(prompt("Enter the option"));
+        var add= num1+num2;
+        var sub= num1-num2;
+        var multi= num1*num2;
+        var div= num1/num2;
+        
+        switch(opt)
+        {
+            case 1:
+            document.write("Addition of " + num1 + " & " + num2 +  "is" + add);
+            break;
+            case 2:
+            document.write("Subtraction of " + num1 + " & " + num2 +  "is" + sub);
+            break;
+            case 3:
+            document.write("Multiplication of " + num1 + " & " + num2 +  "is" + multi);
+            break;
+            case 4:
+            document.write("Division of " + num1 + " & " + num2 + "is" + div);
+            break;
+
+            default:
+            
+            document.write("Please Enter valid numbers ");
+            
+
+        }
+
+        if(num%2==0)
+        {
+          
+        }
+        else{
+            document.write("Number " + num + "is an Odd Number");
+        }
+    </script>
+
+    
+</body>
+</html>
