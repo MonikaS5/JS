@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Date in JS</title>
+	<style type="text/css">
+		body
+		{
+			margin:200px;
+		}
+	</style>
+	<script type="text/javascript">
+		function show()
+		{
+			var d = new	Date();			
+			var dd = d.getDate();
+			var m = d.getMonth()+1;
+			var y = d.getFullYear();
+
+			
+			//document.getElementById("t1").value = h +":"+ m +":" + s;
+			if(dd<10 || m<10)
+			{
+			document.getElementById("t1").value ="Date   : "+ " "+ '0'+ dd+"-"+ '0'+m+"-"+y;
+			}
+			else
+			{
+				document.getElementById("t1").value=dd+"-"+m+"-"+y;
+			}
+		}
+
+		window.setInterval("show()",1000);
+	</script>
+</head>
+<body>	
+	<input type="text" id="t1" size=100 readonly>
+</body>
+</html>
