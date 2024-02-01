@@ -1,0 +1,34 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Focus and Blur Event</title>
+	<style>
+	body
+	{
+		margin:100px;
+
+	}
+</style>
+	
+</head>
+<body>
+	<div>User Name</div>
+	<div><input type="text" id="t1" onfocus="foucsItForT1()"></div>	
+
+			
+	<script>
+		//Example of Focus and Blur
+		function foucsItForT1()
+		{
+			document.getElementById("t1").style.caretColor="red";
+            document.getElementById("t1").style.background = "yellow";
+		}
+
+	
+		
+	</script>
+</body>
+</html>
