@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<body>
+
+    <form name="calcform">
+        <label for=""> Number1</label>
+        <input type ="text" name="num1">
+        <br>
+        <label for=""> Number2</label>
+        <input type ="text" name="num2">
+        <br>
+        <label for=""> Result</label>
+        <input type ="text" name="result">
+        <br>
+        <br>
+        <input type="button" name="Add" value="Addition" onclick="calculate(this)">
+        <input type="button" name="Sub" value="Subtraction" onclick="calculate(this)">
+        <input type="button" name="Mul" value="Multiplication" onclick="calculate(this)">
+        <input type="button" name="Div" value="Divsion" onclick="calculate(this)">
+        <input type="button" name="Mod" value="Modulus" onclick="calculate(this)">
+
+    </form>
+    
+    <script>
+
+        function calculate(a)
+        {
+            var x = parseFloat(document.calcform.num1.value);
+            var y = parseFloat(document.calcform.num2.value);
+            var z = document.calcform.result;
+        
+        if(a.value=="Addition")
+        {
+            z.value=x+y;
+        }
+    
+        else if (a.value=="Subtraction")
+        {
+            z.value=x-y;
+        }
+        else if (a.value=="Multiplication")
+        {
+            z.value=x*y;
+        }
+        else if (a.value=="Division")
+        {
+            z.value=x/y;
+        }
+        else
+        {
+            z.value=x%y;
+        }
+    }
+    
+    </script>
+</body>
+</html>

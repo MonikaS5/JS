@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Click Example 2</title>
+	
+</head>
+<body> 
+		<div>
+			<h5>Enter first no.</h5>
+		
+			<input type="text" id="num1">
+		</div>
+		<div>
+			<h5>Enter second no.</h5>
+			<input type="text" id="num2">
+		</div>
+		<div>
+			<h4>Arithmetic operations</h4>
+		<input type="button" value="Addition" onclick="add()">
+		<input type="button" value="Subtraction" onclick="sub()">
+		<input type="button" value="Division" onclick="div()">
+		<input type="button" value="Multiplication" onclick="multi()">
+		</div>
+		<div>
+			<h3>Answer
+		<input type="text" id="num3"></div>
+
+        <script type="text/javascript">
+		 
+
+            function add()
+            {
+                
+                var num1 = Number(document.getElementById("num1").value);
+    
+                
+                var num2 = Number(document.getElementById("num2").value);
+                            
+                 
+                var num3=num1+ num2;
+    
+                document.getElementById("num3").value  = num3;
+                
+                        
+            }
+    
+            function sub()
+            {
+                
+                var num1 = Number(document.getElementById("num1").value);
+                
+                
+                var num2 = Number(document.getElementById("num2").value);
+                            
+                 
+                var num3=num1- num2;
+    
+                document.getElementById("num3").value  = num3;
+                
+                        
+            }
+    
+            function div()
+            {
+                
+                var num1 = Number(document.getElementById("num1").value);
+                
+                
+                var num2 = Number(document.getElementById("num2").value);
+                            
+                 
+                var num3=num1/ num2;
+    
+                document.getElementById("num3").value  = num3;
+                
+                        
+            }
+    
+            function multi()
+            {
+                
+                var num1 = Number(document.getElementById("num1").value);
+                
+                
+                var num2 = Number(document.getElementById("num2").value);
+                            
+                 
+                var num3=num1*num2;
+    
+                document.getElementById("num3").value  = num3;
+                
+                        
+            }
+    
+         
+    
+    
+        </script>
+		
+		
+	
+</body>
+</html>
